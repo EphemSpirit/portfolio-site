@@ -71,6 +71,13 @@ body {
   width: 50%;
 }
 
+/* IMAGES */
+
+.self-portrait {
+  background-image: url('assets/images/fm_84.png');
+  background-size: contain;
+}
+
 .thumbnail {
   background-color: lightblue;
   border: 1px solid black;
