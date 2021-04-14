@@ -5,60 +5,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   <title>Drew Hund</title>
 </head>
   <body>
     <div class="container main-container">
-      <div class="main-header">
-        <h3>Drew Hund</h3><i>RoR Developer</i>
-      </div>
       <div class="section">
         <div class="main-content">
           <section class="bio">
-            <figure class="self-portrait">
-              image
-            </figure>
+            <aside class="tagline">
+              <figure class="self-portrait"></figure>
+              <section class="branding">
+                <h3 class="name">Drew Hund</h3><br /><i>An Up and Coming Rails Developer for Any Job</i>
+              </section>
+            </aside>
+
             <article class="bio-blurb">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Hello there! My name is Drew and I've been a Ruby on Rails developer for about the past year.
+              I got started when I stumbled across the Full Stack curriculum offered by <a href="https://www.theodinproject.com/paths/full-stack-ruby-on-rails">The Odin Project</a>,
+              and from there I discovered a love for web development and minimalist design. Over the past year I've learned to code from the ground up, taking the time to develop a deep
+              understanding of the Rails framework and the Ruby langauge that it's built on. I hope you like the projects I've provided here, as they are some of the most advanced
+              things I've built so far! There's a deli marketplace, and even a lightweight Facebook clone! Thank you so much for taking the time to look at my work.
             </article>
           </section>
           <section class="project-teaser">
-            My Projects
+            <h3>Projects</h3>
           </section>
           <section class="project-one">
             <article class="project-summary">
-              <h3 class="project-title">Project One</h3><br />
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              <h3 class="project-title"><a href="https://dh-flightbooker.herokuapp.com/" target="_blank">Flight Booker</a></h3><br />
+              This project was completed as part of the curriculum for The Odin Project, and shows off Rails' capabilities with nested attributes!
+              A person can select a flight from the dropdowns, and if any results are found in the database, they'll pop up on the right hand side;
+              if not, a friendly message will apologize for not having any flights. Once a person clicks "Book this Flight", they'll be taken to a screen
+              to fill out passenger information. One passenger field is dynamically generated for the number of passengers specified on the index screen!
+              Nested attributes in action! It's a small airport, so there's only 10 flights at the moment.
+              But every major airline was once a small regional outfit, you just gotta have faith. Smart money is on booking a flight from RLA to SFO on 5/18/21 -
+              I heard there's a flight then, but mum's the word.
             </article>
-            <figure class="thumbnail">
-              image
-            </figure>
+            <figure class="thumbnail flight-booker"></figure>
           </section>
           <section class="project-two">
-            <figure class="thumbnail">
-              image
-            </figure>
+            <figure class="thumbnail machine"></figure>
             <article class="project-summary">
-              <h3 class="project-title">Project Two</h3><br />
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              <h3 class="project-title"><a href="https://dystopia-incarnate.herokuapp.com/" target="_blank">The Machine</a></h3><br />
+              For this project, the assignment was to build a lightweight Facebook clone! Full disclosure, I deleted my facebook account years ago so I was working
+              off memory and probably styled more in line with Facebook's first release. But the important thing is that all the core functionality is there! User accounts
+              (authenticated through Devise), posts, comments, likes, reciprocal freidnships, a dashboard, the whole kit and kaboodle. I also employed the Faker gem in order to give my user profiles
+              a profile picture of Bill Murray because...well who doesn't love Bill Murray. The freidnships were extremely challenging to build but in the end I was able to
+              build something I'm happy with and which lets users send friend requests, while letting the receiver of that request accept it or deny it.
             </article>
           </section>
           <section class="project-three">
             <article class="project-summary">
-              <h3 class="project-title">Project Three</h3><br />
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              <h3 class="project-title"><a href="https://dhund-tc3.herokuapp.com/" target="_blank">Organizer</a></h3><br />
+              The motivation behind this project was my chronic habit of jotting things down on a piece of paper, and then forgetting where that piece of paper is when I need it; I
+              also needed a project that would let me practice polymorphic model associations. This is a basic organization app where people can create an account and be taken to their dahsboard
+              and have the option of creating a text/image/to-do/calendar post. I then added a tagging functionality, which is where polymorphism comes in! Users are then free to use the search functionality,
+              which will return any post that has the given tag. I employed some more advanced namespacing of my controllers and routes to implement the polymorphism, so I'm pretty proud of how this one turned out!
+              Now people can safely dump their photos/etc here until they find a more permanent home for them.
             </article>
-            <figure class="thumbnail">
-              image
-            </figure>
+            <figure class="thumbnail time-capsule"></figure>
           </section>
           <section class="project-four">
-            <figure class="thumbnail">
-              image
-            </figure>
+            <figure class="thumbnail deli"></figure>
             <article class="project-summary">
-              <h3 class="project-title">Project Four</h3><br />
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              <h3 class="project-title"><a href="https://hundessohn-deli.herokuapp.com/" target="_blank">Deli Marketplace</a></h3><br />
+              Who doesn't love a good deli sandwich! Now people can peruse the menu of my favorite deli (not real), and find their lunch for the day!
+              This website features a searchable menu with "fuzzy" matching - if you type in only part of a product name, that product will still show up in
+              the search results. It also has a shopping cart functionality! There's no payment functionality, but I was proud of having built
+              a working shopping cart which is based on session data. Each new session generates a new cart if one deosn't already exist! For the deli owners,
+              I added an "admin" side of the website (located at /products), so the deli owners can see a list of all products, edit, add, delete, etc. those items
+              and keep their menu up to date and current! Stop by for a hero today!
             </article>
           </section>
         </div>
