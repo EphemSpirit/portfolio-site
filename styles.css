@@ -3,7 +3,7 @@
 }
 
 body {
-  background: linear-gradient(-30deg, #4df7db, #1d637d);
+  background: #3B304A;
 }
 
 h1,
@@ -13,15 +13,17 @@ h4,
 h5,
 h6 {
   font-family: Cabin, sans-serif;
+  color: #19171A;
 }
 
 article {
   font-family: Lato, sans-serif;
   font-weight: 500;
+  color: #E3870E;
 }
 
 a {
-  color: #000;
+  color: #75B172;
   text-decoration: underline;
 }
 
@@ -71,6 +73,11 @@ a {
   align-items: center;
 }
 
+.project-four {
+  border: none;
+  margin-bottom: 20px;
+}
+
 @media screen and (max-width: 600px) {
   .project-one,
   .project-two,
@@ -106,37 +113,24 @@ a {
   background-size: contain;
 }
 
-.flight-booker {
-  background-image: url('assets/images/flight_booker.png');
-  background-size: cover;
-}
+.flight-booker { background-image: url('assets/images/flight_booker.png'); }
 
-.machine {
-  background-image: url('assets/images/machine.png');
-  background-size: cover;
-}
+.machine { background-image: url('assets/images/machine.png'); }
 
-.time-capsule {
-  background-image: url('assets/images/tc3.png');
-  background-size: cover;
-}
+.time-capsule { background-image: url('assets/images/tc3.png'); }
 
-.deli {
-  background-image: url('assets/images/deli.png');
-  background-size: cover;
-}
+.deli { background-image: url('assets/images/deli.png'); }
 
 .thumbnail {
-  background-color: lightblue;
+  background-size: cover;
+  background-position: center;
   border: 1px solid black;
   border-radius: 5px;
   height: 250px;
-  width: 450px;
-  text-align: center;
-  line-height: 250px;
+  width: 300px;
 }
 
-.footer {
+.contact-info {
   width: 100%;
   text-align: center;
 }
